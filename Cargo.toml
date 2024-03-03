@@ -1,0 +1,14 @@
+[package]
+name = "tg-msg-forwarder"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+anyhow = "1.0.80"
+log = { version = "0.4.21", features = ["std"] }
+pretty_env_logger = "0.5.0"
+serde = { version = "1.0.197", features = ["derive"] }
+teloxide = { version = "0.12.2", features = ["macros"] }
+tokio = { version = "1.36.0", features = ["macros", "rt-multi-thread"] }
+toml = "0.8.10"
